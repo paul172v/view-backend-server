@@ -31,7 +31,7 @@ const mainMenuRouter = require("./routes/mainMenuRoutes");
 // //// ROUTES
 app.use("/api/v1/main-menu", mainMenuRouter);
 // app.use("/api/v1/kids-menu", kidsMenuRouter);
-// app.use("/api/v1/dessert-menu", dessertMenuRouter);
+// app.use("/api/v1/drinks-menu", drinksMenuRouter);
 
 app.all("*", (req, res, next) => {
   next(new AppError(`Can't find ${req.originalUrl} on this server!`, 404));
