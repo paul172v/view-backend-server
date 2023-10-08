@@ -9,219 +9,221 @@ router.route("/get-every-array").get(drinksMenuController.getEveryArray);
 // Draught Beer And Ciders
 router
   .route("/draught-beer-and-ciders")
-  .get(drinksController.getAllDraughtBeerAndCiders)
-  .post(drinksController.createOneDraughtBeerAndCider);
+  .get(drinksMenuController.getAllDraughtBeerAndCiders)
+  .post(drinksMenuController.createOneDraughtBeerAndCider);
 
 router
   .route("/draught-beer-and-ciders/:id")
-  .patch(drinksController.updateOneDraughtBeerAndCider)
-  .delete(drinksController.deleteOneDraughtBeerAndCider);
+  .patch(drinksMenuController.updateOneDraughtBeerAndCider)
+  .delete(drinksMenuController.deleteOneDraughtBeerAndCider);
 
 // Bottled Beer And Ciders
 router
   .route("/bottled-beer-and-ciders")
-  .get(drinksController.getAllBottledBeerAndCiders)
-  .post(drinksController.createOneBottledBeerAndCider);
+  .get(drinksMenuController.getAllBottledBeerAndCiders)
+  .post(drinksMenuController.createOneBottledBeerAndCider);
 
 router
   .route("/bottled-beer-and-ciders/:id")
-  .patch(drinksController.updateOneBottledBeerAndCider)
-  .delete(drinksController.deleteOneBottledBeerAndCider);
+  .patch(drinksMenuController.updateOneBottledBeerAndCider)
+  .delete(drinksMenuController.deleteOneBottledBeerAndCider);
 
 // Scottish Fyne Ales
 router
   .route("/scottish-fyne-ales")
-  .get(drinksController.getAllScottishFyneAles)
-  .post(drinksController.createOneScottishFyneAle);
+  .get(drinksMenuController.getAllScottishFyneAles)
+  .post(drinksMenuController.createOneScottishFyneAle);
 
 router
   .route("/scottish-fyne-ales/:id")
-  .patch(drinksController.updateOneScottishFyneAle)
-  .delete(drinksController.deleteOneScottishFyneAle);
+  .patch(drinksMenuController.updateOneScottishFyneAle)
+  .delete(drinksMenuController.deleteOneScottishFyneAle);
 
 // Gins
 router
   .route("/gins")
-  .get(drinksController.getAllGins)
-  .post(drinksController.createOneGin);
+  .get(drinksMenuController.getAllGins)
+  .post(drinksMenuController.createOneGin);
 
 router
   .route("/gins/:id")
-  .patch(drinksController.updateOneGin)
-  .delete(drinksController.deleteOneGin);
+  .patch(drinksMenuController.updateOneGin)
+  .delete(drinksMenuController.deleteOneGin);
 
 // Cocktails
 router
   .route("/cocktails")
-  .get(drinksController.getAllCocktails)
-  .post(drinksController.createOneCocktail);
+  .get(drinksMenuController.getAllCocktails)
+  .post(drinksMenuController.createOneCocktail);
 
 router
   .route("/cocktails/:id")
-  .patch(drinksController.updateOneCocktail)
-  .delete(drinksController.deleteOneCocktail);
+  .patch(drinksMenuController.updateOneCocktail)
+  .delete(drinksMenuController.deleteOneCocktail);
 
 // Frozen Cocktails
 router
   .route("/frozen-cocktails")
-  .get(drinksController.getAllFrozenCocktails)
-  .post(drinksController.createOneFrozenCocktail);
+  .get(drinksMenuController.getAllFrozenCocktails)
+  .post(drinksMenuController.createOneFrozenCocktail);
 
 router
   .route("/frozen-cocktails/:id")
-  .patch(drinksController.updateOneFrozenCocktail)
-  .delete(drinksController.deleteOneFrozenCocktail);
+  .patch(drinksMenuController.updateOneFrozenCocktail)
+  .delete(drinksMenuController.deleteOneFrozenCocktail);
 
 // Vodka
 router
   .route("/vodka")
-  .get(drinksController.getAllVodka)
-  .post(drinksController.createOneVodka);
+  .get(drinksMenuController.getAllVodka)
+  .post(drinksMenuController.createOneVodka);
 
 router
   .route("/vodka/:id")
-  .patch(drinksController.updateOneVodka)
-  .delete(drinksController.deleteOneVodka);
+  .patch(drinksMenuController.updateOneVodka)
+  .delete(drinksMenuController.deleteOneVodka);
 
 // Spirits
 router
   .route("/spirits")
-  .get(drinksController.getAllSpirits)
-  .post(drinksController.createOneSpirit);
+  .get(drinksMenuController.getAllSpirits)
+  .post(drinksMenuController.createOneSpirit);
 
 router
   .route("/spirits/:id")
-  .patch(drinksController.updateOneSpirit)
-  .delete(drinksController.deleteOneSpirit);
+  .patch(drinksMenuController.updateOneSpirit)
+  .delete(drinksMenuController.deleteOneSpirit);
 
 // Shooters
 router
   .route("/shooters")
-  .get(drinksController.getAllShooters)
-  .post(drinksController.createOneShooter);
+  .get(drinksMenuController.getAllShooters)
+  .post(drinksMenuController.createOneShooter);
 
 router
   .route("/shooters/:id")
-  .patch(drinksController.updateOneShooter)
-  .delete(drinksController.deleteOneShooter);
+  .patch(drinksMenuController.updateOneShooter)
+  .delete(drinksMenuController.deleteOneShooter);
 
 // Malts
 router
   .route("/malts")
-  .get(drinksController.getAllMalts)
-  .post(drinksController.createOneMalt);
+  .get(drinksMenuController.getAllMalts)
+  .post(drinksMenuController.createOneMalt);
 
 router
   .route("/malts/:id")
-  .patch(drinksController.updateOneMalt)
-  .delete(drinksController.deleteOneMalt);
+  .patch(drinksMenuController.updateOneMalt)
+  .delete(drinksMenuController.deleteOneMalt);
 
 // Red Wine
 router
   .route("/red-wine")
-  .get(drinksController.getAllRedWine)
-  .post(drinksController.createOneRedWine);
+  .get(drinksMenuController.getAllRedWine)
+  .post(drinksMenuController.createOneRedWine);
 
 router
   .route("/red-wine/:id")
-  .patch(drinksController.updateOneRedWine)
-  .delete(drinksController.deleteOneRedWine);
+  .patch(drinksMenuController.updateOneRedWine)
+  .delete(drinksMenuController.deleteOneRedWine);
 
 // Rose Wine
 router
   .route("/rose-wine")
-  .get(drinksController.getAllRoseWine)
-  .post(drinksController.createOneRoseWine);
+  .get(drinksMenuController.getAllRoseWine)
+  .post(drinksMenuController.createOneRoseWine);
 
 router
   .route("/rose-wine/:id")
-  .patch(drinksController.updateOneRoseWine)
-  .delete(drinksController.deleteOneRoseWine);
+  .patch(drinksMenuController.updateOneRoseWine)
+  .delete(drinksMenuController.deleteOneRoseWine);
 
 // White Wine
 router
   .route("/white-wine")
-  .get(drinksController.getAllWhiteWine)
-  .post(drinksController.createOneWhiteWine);
+  .get(drinksMenuController.getAllWhiteWine)
+  .post(drinksMenuController.createOneWhiteWine);
 
 router
   .route("/white-wine/:id")
-  .patch(drinksController.updateOneWhiteWine)
-  .delete(drinksController.deleteOneWhiteWine);
+  .patch(drinksMenuController.updateOneWhiteWine)
+  .delete(drinksMenuController.deleteOneWhiteWine);
 
 // Sparkling Wine
 router
   .route("/sparkling-wine")
-  .get(drinksController.getAllSparklingWine)
-  .post(drinksController.createOneSparklingWine);
+  .get(drinksMenuController.getAllSparklingWine)
+  .post(drinksMenuController.createOneSparklingWine);
 
 router
   .route("/sparkling-wine/:id")
-  .patch(drinksController.updateOneSparklingWine)
-  .delete(drinksController.deleteOneSparklingWine);
+  .patch(drinksMenuController.updateOneSparklingWine)
+  .delete(drinksMenuController.deleteOneSparklingWine);
 
 // Champagne
 router
   .route("/champagne")
-  .get(drinksController.getAllChampagne)
-  .post(drinksController.createOneMalt);
+  .get(drinksMenuController.getAllChampagne)
+  .post(drinksMenuController.createOneMalt);
 
 router
   .route("/champagne/:id")
-  .patch(drinksController.updateOneChampagne)
-  .delete(drinksController.deleteOneChampagne);
+  .patch(drinksMenuController.updateOneChampagne)
+  .delete(drinksMenuController.deleteOneChampagne);
 
 // Mixers
 router
   .route("/mixers")
-  .get(drinksController.getAllMixers)
-  .post(drinksController.createOneMixer);
+  .get(drinksMenuController.getAllMixers)
+  .post(drinksMenuController.createOneMixer);
 
 router
   .route("/mixers/:id")
-  .patch(drinksController.updateOneMixer)
-  .delete(drinksController.deleteOneMixer);
+  .patch(drinksMenuController.updateOneMixer)
+  .delete(drinksMenuController.deleteOneMixer);
 
 // Soft Drinks 10oz
 router
   .route("/soft-drinks-10oz")
-  .get(drinksController.getAllSoftDrink10oz)
-  .post(drinksController.createOneSoftDrink10oz);
+  .get(drinksMenuController.getAllSoftDrinks10oz)
+  .post(drinksMenuController.createOneSoftDrink10oz);
 
 router
   .route("/soft-drinks-10oz/:id")
-  .patch(drinksController.updateOneSoftDrink10oz)
-  .delete(drinksController.deleteOneSoftDrink10oz);
+  .patch(drinksMenuController.updateOneSoftDrink10oz)
+  .delete(drinksMenuController.deleteOneSoftDrink10oz);
 
 // Soft Drinks 330ml
 router
   .route("/soft-drinks-330ml")
-  .get(drinksController.getAllSoftDrink330ml)
-  .post(drinksController.createOneSoftDrink330ml);
+  .get(drinksMenuController.getAllSoftDrinks330ml)
+  .post(drinksMenuController.createOneSoftDrink330ml);
 
 router
   .route("/soft-drinks-330ml/:id")
-  .patch(drinksController.updateOneSoftDrink330ml)
-  .delete(drinksController.deleteOneSoftDrink330ml);
+  .patch(drinksMenuController.updateOneSoftDrink330ml)
+  .delete(drinksMenuController.deleteOneSoftDrink330ml);
 
 // Soft Drinks 275ml
 router
   .route("/soft-drinks-275ml")
-  .get(drinksController.getAllSoftDrink275ml)
-  .post(drinksController.createOneSoftDrink275ml);
+  .get(drinksMenuController.getAllSoftDrinks275ml)
+  .post(drinksMenuController.createOneSoftDrink275ml);
 
 router
   .route("/soft-drinks-275ml/:id")
-  .patch(drinksController.updateOneSoftDrink275ml)
-  .delete(drinksController.deleteOneSoftDrink275ml);
+  .patch(drinksMenuController.updateOneSoftDrink275ml)
+  .delete(drinksMenuController.deleteOneSoftDrink275ml);
 
 // Soft Drinks 250ml
 router
   .route("/soft-drinks-250ml")
-  .get(drinksController.getAllSoftDrink250ml)
-  .post(drinksController.createOneSoftDrink250ml);
+  .get(drinksMenuController.getAllSoftDrinks250ml)
+  .post(drinksMenuController.createOneSoftDrink250ml);
 
 router
   .route("/soft-drinks-250ml/:id")
-  .patch(drinksController.updateOneSoftDrink250ml)
-  .delete(drinksController.deleteOneSoftDrink250ml);
+  .patch(drinksMenuController.updateOneSoftDrink250ml)
+  .delete(drinksMenuController.deleteOneSoftDrink250ml);
+
+module.exports = router;

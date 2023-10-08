@@ -26,12 +26,12 @@ app.use(express.json({ limit: "10kb" }));
 // //// ROUTERS
 const mainMenuRouter = require("./routes/mainMenuRoutes");
 const kidsMenuRouter = require("./routes/kidsMenuRoutes");
-// const dessertMenuRouter = require("./routes/dessertMenuRoutes");
+const drinksMenuRouter = require("./routes/drinksMenuRoutes");
 
 // //// ROUTES
 app.use("/api/v1/main-menu", mainMenuRouter);
 app.use("/api/v1/kids-menu", kidsMenuRouter);
-// app.use("/api/v1/drinks-menu", drinksMenuRouter);
+app.use("/api/v1/drinks-menu", drinksMenuRouter);
 
 app.all("*", (req, res, next) => {
   next(new AppError(`Can't find ${req.originalUrl} on this server!`, 404));
