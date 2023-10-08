@@ -7,7 +7,7 @@ const startersSchema = new mongoose.Schema({
     unique: [true, "Menu item's name must be unique"],
   },
   dietary: {
-    type: String,
+    type: [String],
     enum: ["gfo", "vgo", "v"],
   },
   details: {
@@ -19,6 +19,6 @@ const startersSchema = new mongoose.Schema({
   },
 });
 
-const Starter = new mongoose.model("Starter", startersSchema);
+const KidsStarter = new mongoose.model("KidsStarter", startersSchema);
 
-module.exports = Starter;
+module.exports = KidsStarter;

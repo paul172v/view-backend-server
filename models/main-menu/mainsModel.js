@@ -1,17 +1,15 @@
 const mongoose = require("mongoose");
 
-const addsSchema = new mongoose.Schema([
-  {
-    item: {
-      type: String,
-      required: ["Add must have a name"],
-    },
-    price: {
-      type: Number,
-      required: [true, "Add must have a price"],
-    },
+const addsSchema = new mongoose.Schema({
+  name: {
+    type: String,
+    required: ["Add must have a name"],
   },
-]);
+  price: {
+    type: Number,
+    required: [true, "Add must have a price"],
+  },
+});
 
 const mainsSchema = new mongoose.Schema({
   name: {

@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const steaksSidesSchema = new mongoose.Schema({
+const softDrinks330mlSchema = new mongoose.Schema({
   name: {
     type: String,
     required: [true, "Menu item must have a name"],
@@ -12,6 +12,9 @@ const steaksSidesSchema = new mongoose.Schema({
   },
 });
 
-const SteakSide = new mongoose.model("SteakSide", steaksSidesSchema);
+const SoftDrink330ml = new mongoose.model(
+  "SoftDrink330ml",
+  softDrinks330mlSchema
+);
 
-module.exports = SteakSide;
+module.exports = SoftDrink330ml;

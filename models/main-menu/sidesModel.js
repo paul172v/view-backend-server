@@ -7,7 +7,7 @@ const sidesSchema = new mongoose.Schema({
     unique: [true, "Menu item's name must be unique"],
   },
   dietary: {
-    type: String,
+    type: [String],
     enum: ["gfo", "vgo", "v"],
   },
   price: {

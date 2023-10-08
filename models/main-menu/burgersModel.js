@@ -1,17 +1,15 @@
 const mongoose = require("mongoose");
 
-const addsSchema = new mongoose.Schema([
-  {
-    item: {
-      type: String,
-      required: ["Add must have a name"],
-    },
-    price: {
-      type: Number,
-      required: [true, "Add must have a price"],
-    },
+const addsSchema = new mongoose.Schema({
+  name: {
+    type: String,
+    required: ["Add must have a name"],
   },
-]);
+  price: {
+    type: Number,
+    required: [true, "Add must have a price"],
+  },
+});
 
 const burgersSchema = new mongoose.Schema({
   name: {
@@ -21,6 +19,7 @@ const burgersSchema = new mongoose.Schema({
   },
   dietary: {
     type: [String],
+    enum: ["gfo", "vgo", "v"],
   },
   details: {
     type: String,

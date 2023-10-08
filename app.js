@@ -25,12 +25,12 @@ app.use(express.json({ limit: "10kb" }));
 
 // //// ROUTERS
 const mainMenuRouter = require("./routes/mainMenuRoutes");
-// const kidsMenuRouter = require("./routes/kidMenuRouter");
+const kidsMenuRouter = require("./routes/kidsMenuRoutes");
 // const dessertMenuRouter = require("./routes/dessertMenuRoutes");
 
 // //// ROUTES
 app.use("/api/v1/main-menu", mainMenuRouter);
-// app.use("/api/v1/kids-menu", kidsMenuRouter);
+app.use("/api/v1/kids-menu", kidsMenuRouter);
 // app.use("/api/v1/drinks-menu", drinksMenuRouter);
 
 app.all("*", (req, res, next) => {

@@ -7,7 +7,7 @@ const sharersSchema = new mongoose.Schema({
     unique: [true, "Menu item's name must be unique"],
   },
   dietary: {
-    type: String,
+    type: [String],
     enum: ["gfo", "vgo", "v"],
   },
   details: {
@@ -19,6 +19,6 @@ const sharersSchema = new mongoose.Schema({
   },
 });
 
-const Sharer = new mongoose.Model("Sharer", sharersSchema);
+const Sharer = new mongoose.model("Sharer", sharersSchema);
 
 module.exports = Sharer;

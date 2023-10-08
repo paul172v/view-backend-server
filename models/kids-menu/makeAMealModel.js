@@ -8,7 +8,7 @@ const menuItemSchema = new mongoose.Schema({
   },
   dietary: {
     type: [String],
-    default: [],
+    enum: ["gfo", "vgo", "v"],
   },
 });
 
@@ -27,13 +27,22 @@ const MakeAMealExtraSchema = new mongoose.Schema({
 
 // Create models from the schemas
 const MenuItem = mongoose.model("MenuItem", menuItemSchema);
-const MakeAMealMain = mongoose.model("MakeAMealMain", MakeAMealMainSchema);
-const MakeAMealSide = mongoose.model("MakeAMealSide", MakeAMealSideSchema);
-const MakeAMealExtra = mongoose.model("MakeAMealExtra", MakeAMealExtraSchema);
+const KidsMakeAMealMain = mongoose.model(
+  "KidsMakeAMealMain",
+  MakeAMealMainSchema
+);
+const KidsMakeAMealSide = mongoose.model(
+  "KidsMakeAMealSide",
+  MakeAMealSideSchema
+);
+const KidsMakeAMealExtra = mongoose.model(
+  "KidsMakeAMealExtra",
+  MakeAMealExtraSchema
+);
 
 module.exports = {
   MenuItem,
-  MakeAMealMain,
-  MakeAMealSide,
-  MakeAMealExtra,
+  KidsMakeAMealMain,
+  KidsMakeAMealSide,
+  KidsMakeAMealExtra,
 };

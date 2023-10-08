@@ -7,7 +7,7 @@ const dessertsSchema = new mongoose.Schema({
     unique: [true, "Menu item's name must be unique"],
   },
   dietary: {
-    type: String,
+    type: [String],
     enum: ["gfo", "vgo", "v"],
   },
   details: {
@@ -19,6 +19,6 @@ const dessertsSchema = new mongoose.Schema({
   },
 });
 
-const Dessert = new mongoose.model("Dessert", dessertsSchema);
+const KidsDessert = new mongoose.model("KidsDessert", dessertsSchema);
 
-module.exports = Dessert;
+module.exports = KidsDessert;
