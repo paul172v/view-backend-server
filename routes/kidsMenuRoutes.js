@@ -7,59 +7,63 @@ const kidsMenuController = require("../controllers/kidsMenuController");
 router.route("/get-every-array").get(kidsMenuController.getEveryArray);
 
 // Starters
-router.route("/starters").get(kidsMenuController.getAllStarters);
-router.route("/starters/:id").patch(kidsMenuController.updateOneStarter);
-router.route("/starters/:id").delete(kidsMenuController.deleteOneStarter);
-router.route("/starters").post(kidsMenuController.createOneStarter);
+router
+  .route("/starters")
+  .get(kidsMenuController.getAllStarters)
+  .post(kidsMenuController.createOneStarter);
+router
+  .route("/starters/:id")
+  .patch(kidsMenuController.updateOneStarter)
+  .delete(kidsMenuController.deleteOneStarter);
 
 // Mains
-router.route("/mains").get(kidsMenuController.getAllMains);
-router.route("/mains/:id").patch(kidsMenuController.updateOneMain);
-router.route("/mains/:id").delete(kidsMenuController.deleteOneMain);
-router.route("/mains").post(kidsMenuController.createOneMain);
+router
+  .route("/mains")
+  .get(kidsMenuController.getAllMains)
+  .post(kidsMenuController.createOneMain);
+router
+  .route("/mains/:id")
+  .patch(kidsMenuController.updateOneMain)
+  .delete(kidsMenuController.deleteOneMain);
 
 // Make A Meal Mains
-router.route("/make-a-meal-mains").get(kidsMenuController.getAllMakeAMealMains);
-router
-  .route("/make-a-meal-mains/:id")
-  .patch(kidsMenuController.updateOneMakeAMealMain);
-router
-  .route("/make-a-meal-mains/:id")
-  .delete(kidsMenuController.deleteOneMakeAMealMain);
 router
   .route("/make-a-meal-mains")
+  .get(kidsMenuController.getAllMakeAMealMains)
   .post(kidsMenuController.createOneMakeAMealMain);
+router
+  .route("/make-a-meal-mains/:id")
+  .patch(kidsMenuController.updateOneMakeAMealMain)
+  .delete(kidsMenuController.deleteOneMakeAMealMain);
 
 // Make A Meal Sides
-router.route("/make-a-meal-sides").get(kidsMenuController.getAllMakeAMealSides);
-router
-  .route("/make-a-meal-sides/:id")
-  .patch(kidsMenuController.updateOneMakeAMealSide);
-router
-  .route("/make-a-meal-sides/:id")
-  .delete(kidsMenuController.deleteOneMakeAMealSide);
 router
   .route("/make-a-meal-sides")
+  .get(kidsMenuController.getAllMakeAMealSides)
   .post(kidsMenuController.createOneMakeAMealSide);
+router
+  .route("/make-a-meal-sides/:id")
+  .patch(kidsMenuController.updateOneMakeAMealSide)
+  .delete(kidsMenuController.deleteOneMakeAMealSide);
 
 // Make A Meal Extras
 router
   .route("/make-a-meal-extras")
-  .get(kidsMenuController.getAllMakeAMealExtras);
-router
-  .route("/make-a-meal-extras/:id")
-  .patch(kidsMenuController.updateOneMakeAMealExtra);
-router
-  .route("/make-a-meal-extras/:id")
-  .delete(kidsMenuController.deleteOneMakeAMealExtra);
-router
-  .route("/make-a-meal-extras")
+  .get(kidsMenuController.getAllMakeAMealExtras)
   .post(kidsMenuController.createOneMakeAMealExtra);
+router
+  .route("/make-a-meal-extras/:id")
+  .patch(kidsMenuController.updateOneMakeAMealExtra)
+  .delete(kidsMenuController.deleteOneMakeAMealExtra);
 
 // Desserts
-router.route("/desserts").get(kidsMenuController.getAllDesserts);
-router.route("/desserts/:id").patch(kidsMenuController.updateOneDessert);
-router.route("/desserts/:id").delete(kidsMenuController.deleteOneDessert);
-router.route("/desserts").post(kidsMenuController.createOneDessert);
+router
+  .route("/desserts")
+  .get(kidsMenuController.getAllDesserts)
+  .post(kidsMenuController.createOneDessert);
+router
+  .route("/desserts/:id")
+  .patch(kidsMenuController.updateOneDessert)
+  .delete(kidsMenuController.deleteOneDessert);
 
 module.exports = router;
