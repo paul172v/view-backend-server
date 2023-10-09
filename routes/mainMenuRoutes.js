@@ -5,6 +5,16 @@ const mainMenuController = require("../controllers/mainMenuController");
 // Every Array
 router.route("/get-every-array").get(mainMenuController.getEveryArray);
 
+// Starters
+router
+  .route("/starters")
+  .get(mainMenuController.getAllStarters)
+  .post(mainMenuController.createOneStarter);
+router
+  .route("/starters/:id")
+  .patch(mainMenuController.updateOneStarter)
+  .delete(mainMenuController.deleteOneStarter);
+
 // Sharers
 router
   .route("/sharers")
