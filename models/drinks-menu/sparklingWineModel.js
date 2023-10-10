@@ -4,14 +4,9 @@ const sparklingWineSchema = new mongoose.Schema({
   name: {
     type: String,
     required: [true, "Menu item must have a name"],
-    unique: [true, "Menu item must have a unique name"],
   },
   centiliter: {
     type: Number,
-  },
-  measure: {
-    type: Number,
-    required: [true, "Menu item must have a measure"],
   },
   bottle: {
     type: Number,

@@ -8,23 +8,23 @@ router.route("/get-every-array").get(drinksMenuController.getEveryArray);
 
 // Draught Beer And Ciders
 router
-  .route("/draught-beer-and-ciders")
+  .route("/draught-beer-and-cider")
   .get(drinksMenuController.getAllDraughtBeerAndCiders)
   .post(drinksMenuController.createOneDraughtBeerAndCider);
 
 router
-  .route("/draught-beer-and-ciders/:id")
+  .route("/draught-beer-and-cider/:id")
   .patch(drinksMenuController.updateOneDraughtBeerAndCider)
   .delete(drinksMenuController.deleteOneDraughtBeerAndCider);
 
 // Bottled Beer And Ciders
 router
-  .route("/bottled-beer-and-ciders")
+  .route("/bottled-beer-and-cider")
   .get(drinksMenuController.getAllBottledBeerAndCiders)
   .post(drinksMenuController.createOneBottledBeerAndCider);
 
 router
-  .route("/bottled-beer-and-ciders/:id")
+  .route("/bottled-beer-and-cider/:id")
   .patch(drinksMenuController.updateOneBottledBeerAndCider)
   .delete(drinksMenuController.deleteOneBottledBeerAndCider);
 
@@ -164,7 +164,7 @@ router
 router
   .route("/champagne")
   .get(drinksMenuController.getAllChampagne)
-  .post(drinksMenuController.createOneMalt);
+  .post(drinksMenuController.createOneChampagne);
 
 router
   .route("/champagne/:id")

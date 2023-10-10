@@ -2,13 +2,13 @@ const mongoose = require("mongoose");
 
 const scoopsSchema = new mongoose.Schema([
   {
-    item: {
-      type: String,
-      required: ["Add must have a name"],
+    amount: {
+      type: Number,
+      required: [true, "Scoops must have an amount"],
     },
     price: {
       type: Number,
-      required: [true, "Add must have a price"],
+      required: [true, "Scoops must have a price"],
     },
   },
 ]);
