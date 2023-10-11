@@ -25,71 +25,71 @@ const SoftDrink250ml = require("../models/drinks-menu/softDrinks250mlModel");
 exports.getEveryArray = catchAsync(async (req, res, next) => {
   const draughtBeerAndCiderArr = await DraughtBeerAndCider.find();
   const bottledBeerAndCiderArr = await BottledBeerAndCider.find();
-  const scottishFyneAleArr = await ScottishFyneAle.find();
+  const scottishFyneAlesArr = await ScottishFyneAle.find();
   const ginArr = await Gin.find();
-  const cocktailArr = await Cocktail.find();
-  const frozenCocktailArr = await FrozenCocktail.find();
+  const cocktailsArr = await Cocktail.find();
+  const frozenCocktailsArr = await FrozenCocktail.find();
   const vodkaArr = await Vodka.find();
-  const spiritArr = await Spirit.find();
-  const shooterArr = await Shooter.find();
-  const maltArr = await Malt.find();
+  const spiritsArr = await Spirit.find();
+  const shootersArr = await Shooter.find();
+  const maltsArr = await Malt.find();
   const redWineArr = await RedWine.find();
   const roseWineArr = await RoseWine.find();
   const whiteWineArr = await WhiteWine.find();
   const sparklingWineArr = await SparklingWine.find();
   const champagneArr = await Champagne.find();
-  const mixerArr = await Mixer.find();
-  const softDrink10ozArr = await SoftDrink10oz.find();
-  const softDrink330mlArr = await SoftDrink330ml.find();
-  const softDrink275mlArr = await SoftDrink275ml.find();
-  const softDrink250mlArr = await SoftDrink250ml.find();
+  const mixersArr = await Mixer.find();
+  const softDrinks10ozArr = await SoftDrink10oz.find();
+  const softDrinks330mlArr = await SoftDrink330ml.find();
+  const softDrinks275mlArr = await SoftDrink275ml.find();
+  const softDrinks250mlArr = await SoftDrink250ml.find();
 
   res.status(200).json({
     status: "success",
     arrayLengths: {
       draughtBeerAndCiderArr: draughtBeerAndCiderArr.length,
       bottledBeerAndCiderArr: bottledBeerAndCiderArr.length,
-      scottishFyneAleArr: scottishFyneAleArr.length,
+      scottishFyneAlesArr: scottishFyneAlesArr.length,
       ginArr: ginArr.length,
-      cocktailArr: cocktailArr.length,
-      frozenCocktailArr: frozenCocktailArr.length,
+      cocktailsArr: cocktailsArr.length,
+      frozenCocktailsArr: frozenCocktailsArr.length,
       vodkaArr: vodkaArr.length,
-      spiritArr: spiritArr.length,
-      shooterArr: shooterArr.length,
-      maltArr: maltArr.length,
+      spiritsArr: spiritsArr.length,
+      shootersArr: shootersArr.length,
+      maltsArr: maltsArr.length,
       redWineArr: redWineArr.length,
       roseWineArr: roseWineArr.length,
       whiteWineArr: whiteWineArr.length,
       sparklingWineArr: sparklingWineArr.length,
       champagneArr: champagneArr.length,
-      mixerArr: mixerArr.length,
-      softDrink10ozArr: softDrink10ozArr.length,
-      softDrink330mlArr: softDrink330mlArr.length,
-      softDrink275mlArr: softDrink275mlArr.length,
-      softDrink250mlArr: softDrink250mlArr.length,
+      mixersArr: mixersArr.length,
+      softDrinks10ozArr: softDrinks10ozArr.length,
+      softDrinks330mlArr: softDrinks330mlArr.length,
+      softDrinks275mlArr: softDrinks275mlArr.length,
+      softDrinks250mlArr: softDrinks250mlArr.length,
     },
     payload: {
       data: {
         draughtBeerAndCiderArr,
         bottledBeerAndCiderArr,
-        scottishFyneAleArr,
+        scottishFyneAlesArr,
         ginArr,
-        cocktailArr,
-        frozenCocktailArr,
+        cocktailsArr,
+        frozenCocktailsArr,
         vodkaArr,
-        spiritArr,
-        shooterArr,
-        maltArr,
+        spiritsArr,
+        shootersArr,
+        maltsArr,
         redWineArr,
         roseWineArr,
         whiteWineArr,
         sparklingWineArr,
         champagneArr,
-        mixerArr,
-        softDrink10ozArr,
-        softDrink330mlArr,
-        softDrink275mlArr,
-        softDrink250mlArr,
+        mixersArr,
+        softDrinks10ozArr,
+        softDrinks330mlArr,
+        softDrinks275mlArr,
+        softDrinks250mlArr,
       },
     },
   });

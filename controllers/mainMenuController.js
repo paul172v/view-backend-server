@@ -17,6 +17,7 @@ exports.getEveryArray = catchAsync(async (req, res, next) => {
   const startersArr = await Starter.find();
   const sharersArr = await Sharer.find();
   const mainsArr = await Main.find();
+  const saladsArr = await Salad.find();
   const steaksArr = await Steak.find();
   const steakSidesArr = await SteakSide.find();
   const burgersArr = await Burger.find();
@@ -30,6 +31,7 @@ exports.getEveryArray = catchAsync(async (req, res, next) => {
       startersArr: startersArr.length,
       sharersArr: sharersArr.length,
       mainsArr: mainsArr.length,
+      saladsArr: saladsArr.length,
       steaksArr: steaksArr.length,
       steakSidesArr: steakSidesArr.length,
       burgersArr: burgersArr.length,
@@ -42,6 +44,7 @@ exports.getEveryArray = catchAsync(async (req, res, next) => {
         startersArr,
         sharersArr,
         mainsArr,
+        saladsArr,
         steaksArr,
         steakSidesArr,
         burgersArr,

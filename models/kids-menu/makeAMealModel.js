@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
-// Define the schema for individual meal items
-const menuItemSchema = new mongoose.Schema({
+// Define the schema for meal categories, each containing multiple meal items
+const MakeAMealMainSchema = new mongoose.Schema({
   name: {
     type: String,
     required: [true, "Menu item must have a name"],
@@ -12,21 +12,29 @@ const menuItemSchema = new mongoose.Schema({
   },
 });
 
-// Define the schema for meal categories, each containing multiple meal items
-const MakeAMealMainSchema = new mongoose.Schema({
-  items: [menuItemSchema],
-});
-
 const MakeAMealSideSchema = new mongoose.Schema({
-  items: [menuItemSchema],
+  name: {
+    type: String,
+    required: [true, "Menu item must have a name"],
+  },
+  dietary: {
+    type: [String],
+    enum: ["gfo", "vgo", "v"],
+  },
 });
 
 const MakeAMealExtraSchema = new mongoose.Schema({
-  items: [menuItemSchema],
+  name: {
+    type: String,
+    required: [true, "Menu item must have a name"],
+  },
+  dietary: {
+    type: [String],
+    enum: ["gfo", "vgo", "v"],
+  },
 });
 
 // Create models from the schemas
-const MenuItem = mongoose.model("MenuItem", menuItemSchema);
 const KidsMakeAMealMain = mongoose.model(
   "KidsMakeAMealMain",
   MakeAMealMainSchema
@@ -41,7 +49,6 @@ const KidsMakeAMealExtra = mongoose.model(
 );
 
 module.exports = {
-  MenuItem,
   KidsMakeAMealMain,
   KidsMakeAMealSide,
   KidsMakeAMealExtra,
