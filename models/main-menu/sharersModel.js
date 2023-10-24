@@ -8,7 +8,7 @@ const sharersSchema = new mongoose.Schema({
   },
   dietary: {
     type: [String],
-    enum: ["gfo", "vgo", "v"],
+    enum: ["", "gfo", "vgo", "v"],
   },
   details: {
     type: String,

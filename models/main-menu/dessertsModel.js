@@ -4,11 +4,9 @@ const scoopsSchema = new mongoose.Schema([
   {
     amount: {
       type: Number,
-      required: [true, "Scoops must have an amount"],
     },
     price: {
       type: Number,
-      required: [true, "Scoops must have a price"],
     },
   },
 ]);

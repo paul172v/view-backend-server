@@ -8,7 +8,7 @@ const MakeAMealMainSchema = new mongoose.Schema({
   },
   dietary: {
     type: [String],
-    enum: ["gfo", "vgo", "v"],
+    enum: ["", "gfo", "vgo", "v"],
   },
 });
 
@@ -19,7 +19,6 @@ const MakeAMealSideSchema = new mongoose.Schema({
   },
   dietary: {
     type: [String],
-    enum: ["gfo", "vgo", "v"],
   },
 });
 
@@ -30,7 +29,6 @@ const MakeAMealExtraSchema = new mongoose.Schema({
   },
   dietary: {
     type: [String],
-    enum: ["gfo", "vgo", "v"],
   },
 });
 
