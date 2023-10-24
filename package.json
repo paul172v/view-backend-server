@@ -4,7 +4,7 @@
   "description": "The backend for The View online menu and Interface",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "node server.js"
   },
   "author": "Paul Harris",
   "license": "ISC",
